@@ -8,6 +8,8 @@
   </head>
 
   <body>
+    {% extends 'base.html' %}
+    {% block content%}
     <div class="container mt-5">
       <h1 class="mb-3">Upcoming...</h1>
       <div class id="movieCarousel" class="carousel slide mb-3" data-ride="carousel">
@@ -74,5 +76,6 @@
     <script>
       $('.carousel').carousel();
     </script>
+    {% endblock content%}
   </body>
 </html>
