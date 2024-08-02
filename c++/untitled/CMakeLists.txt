@@ -11,4 +11,10 @@ add_executable(untitled main.cpp
         seleccion.cpp
         seleccion.h
         burbuja.cpp
-        burbuja.h)
+        burbuja.h
+        evenodd.cpp
+        evenodd.h
+        mergeSort.cpp
+        mergeSort.h
+        quickSort.cpp
+        quickSort.h)
