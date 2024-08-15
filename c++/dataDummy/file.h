@@ -1,28 +1,27 @@
 #ifndef FILE_H
 #define FILE_H
 
-#include <string>   // Para trabajar con palabras
-#include <vector>   // Para trabajar con arreglos dinámicos
-#include <fstream>  // Para trabajar con archivos
-#include <cstdlib>  // Para std::rand y std::srand
-#include <ctime>    // Para std::time
+#include <string>
+#include <set>
+#include <vector>
 
 class File {
 private:
-    std::vector<std::string> items;
+    std::vector<std::set<std::string > > nombresListas; // Lista de conjuntos de nombres (masculinos y femeninos)
+    std::vector<std::string> countries; // Lista de países
 
 public:
-    // Constructor
-    File();
+    // Lee los nombres desde múltiples archivos y los almacena en listas
+    void readFromFiles(const std::vector<std::string>& archivos);
 
-    // Método para leer los items desde un archivo
-    void leerDesdeArchivo(const std::string& nombreArchivo);
+    // Obtiene un nombre aleatorio de las listas de nombres
+    std::string randomItem() const;
 
-    // Método para imprimir los items
-    void imprimirItems() const;
+    // Determina el género del nombre dado basándose en las listas de nombres
+    std::string chooseGender(const std::string& nombre) const;
 
-    // Método para retornar un item aleatorio
-    std::string obtenerItemAleatorio() const;
+    // Obtiene un país aleatorio de la lista de países
+    std::string chooseCountry() const;
 };
 
 #endif // FILE_H

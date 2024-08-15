@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/jfelipefg17/Desktop/dataDummy/cmake-build-debug",
-		"source" : "/Users/jfelipefg17/Desktop/dataDummy"
+		"build" : "/Users/jfelipefg17/Documents/Programming/EAFIT/c++/dataDummy/cmake-build-debug",
+		"source" : "/Users/jfelipefg17/Documents/Programming/EAFIT/c++/dataDummy"
 	},
 	"version" : 
 	{

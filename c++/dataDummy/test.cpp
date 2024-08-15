@@ -3,7 +3,7 @@
 
 int main() {
     File lista;
-    lista.leerDesdeArchivo("names.txt");
+    lista.leerDesdeArchivo("Fnames.txt");
 
     std::cout << "Items list:" << std::endl;
     lista.imprimirItems();

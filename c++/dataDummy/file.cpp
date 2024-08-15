@@ -1,41 +1,64 @@
 #include "file.h"
+#include <fstream>
+#include <sstream>
 #include <iostream>
+#include <random>
+#include <ctime>
 
-// Constructor
-File::File() {
-    // Inicializar el generador de números aleatorios con el tiempo actual
-    std::srand(static_cast<unsigned int>(std::time(0)));
-}
+void File::readFromFiles(const std::vector<std::string> &archivos) {
+    nombresListas.resize(archivos.size());
 
-// Método para leer los textos desde un archivo
-void File::leerDesdeArchivo(const std::string& nombreArchivo) {
-    std::ifstream file(nombreArchivo);
-    if (file.is_open()) {
-        std::string texto;
-        while (std::getline(file, texto)) {
-            items.push_back(texto);
+    for (size_t i = 0; i < archivos.size(); ++i) {
+        std::ifstream archivo(archivos[i]);
+        std::string nombre;
+        while (std::getline(archivo, nombre)) {
+            nombresListas[i].insert(nombre);
         }
-        file.close();
-    } else {
-        std::cerr << "We can't open the file: " << nombreArchivo << std::endl;
+    }
+
+    // Leer el archivo country.txt
+    std::ifstream archivoPaises("country.txt");
+    std::string pais;
+    while (std::getline(archivoPaises, pais)) {
+        countries.push_back(pais);
     }
 }
 
-// Método para imprimir los items
-void File::imprimirItems() const {
-    int i=1;
-    for (const auto& item : items) {
-        std::cout << "[" << i << "]: " << item << std::endl;
-        i=i+1;
+std::string File::randomItem() const {
+    if (nombresListas.empty()) {
+        return "";
     }
-    std::cout << std::endl;
+
+    // Selecciona aleatoriamente una lista de nombres
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<size_t> listaDis(0, nombresListas.size() - 1);
+    size_t listaIndex = listaDis(gen);
+
+    // Selecciona aleatoriamente un nombre de la lista seleccionada
+    const std::set<std::string>& listaSeleccionada = nombresListas[listaIndex];
+    std::uniform_int_distribution<size_t> nombreDis(0, listaSeleccionada.size() - 1);
+    auto it = listaSeleccionada.begin();
+    std::advance(it, nombreDis(gen));
+    return *it;
 }
 
-// Método para retornar un item aleatorio
-std::string File::obtenerItemAleatorio() const {
-    if (items.empty()) {
-        return "No names on the list";
+std::string File::chooseGender(const std::string &nombre) const {
+    for (const auto& lista : nombresListas) {
+        if (lista.find(nombre) != lista.end()) {
+            return (lista == nombresListas[0]) ? "Femenino" : "Masculino";
+        }
     }
-    int indiceAleatorio = std::rand() % items.size();
-    return items[indiceAleatorio];
+    return "Desconocido";
+}
+
+std::string File::chooseCountry() const {
+    if (countries.empty()) {
+        return "Unknown";
+    }
+
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<size_t> dis(0, countries.size() - 1);
+    return countries[dis(gen)];
 }

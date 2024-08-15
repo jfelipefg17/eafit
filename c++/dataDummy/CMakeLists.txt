@@ -9,4 +9,5 @@ add_executable(dataDummy main.cpp
         test.cpp
         person.h
         person.cpp
-        node.cpp)
+        node.cpp
+)

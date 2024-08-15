@@ -1,4 +1,4 @@
-# Install script for directory: /Users/jfelipefg17/Desktop/dataDummy
+# Install script for directory: /Users/jfelipefg17/Documents/Programming/EAFIT/c++/dataDummy
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/jfelipefg17/Desktop/dataDummy/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/jfelipefg17/Documents/Programming/EAFIT/c++/dataDummy/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

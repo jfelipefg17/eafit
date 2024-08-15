@@ -15,11 +15,10 @@ public:
     Node(const Person &data);
 
     // Método getter para obtener el objeto Persona almacenado
-    Person getData() const;
+    std::string getData() const;
 
     // Método setter para modificar el objeto Persona almacenado
     void setData(const Person &data);
-
 };
 
 #endif // NODE_H
