@@ -1,4 +1,4 @@
-# Install script for directory: /Users/jfelipefg17/Desktop/ABB
+# Install script for directory: /Users/felipeflorez/Documents/Programming/EAFIT/c++/ABB
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/jfelipefg17/Desktop/ABB/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/felipeflorez/Documents/Programming/EAFIT/c++/ABB/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
