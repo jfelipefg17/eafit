@@ -7,6 +7,8 @@ add_executable(dataDummy
         file.h
         file.cpp
         test.cpp
-        person.h
+        person.cpp
+        person.cpp
+        person.cpp
         person.cpp
 )

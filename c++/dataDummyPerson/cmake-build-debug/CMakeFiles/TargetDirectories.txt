@@ -1,0 +1,3 @@
+/Users/jfelipefg17/Documents/Programming/EAFIT/c++/dataDummy/cmake-build-debug/CMakeFiles/dataDummy.dir
+/Users/jfelipefg17/Documents/Programming/EAFIT/c++/dataDummy/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/jfelipefg17/Documents/Programming/EAFIT/c++/dataDummy/cmake-build-debug/CMakeFiles/rebuild_cache.dir

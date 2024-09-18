@@ -2,150 +2,147 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
-#include <chrono>
-#include <iomanip>
-#include <sstream>
-#include "Person.h"
-#include "File.h"
-
-// Función para combinar dos mitades de un vector
-void merge(std::vector<Person>& arr, int left, int mid, int right) {
-    int n1 = mid - left + 1;
-    int n2 = right - mid;
-
-    std::vector<Person> L(arr.begin() + left, arr.begin() + mid + 1);
-    std::vector<Person> R(arr.begin() + mid + 1, arr.begin() + right + 1);
-
-    int i = 0, j = 0, k = left;
-
-    // Combina los elementos de las dos mitades
-    while (i < n1 && j < n2) {
-        if (L[i].getTotalScore() >= R[j].getTotalScore()) {
-            arr[k] = L[i];
-            i++;
-        } else {
-            arr[k] = R[j];
-            j++;
-        }
-        k++;
-    }
-
-    // Copia los elementos restantes de la mitad izquierda
-    while (i < n1) {
-        arr[k] = L[i];
-        i++;
-        k++;
-    }
-
-    // Copia los elementos restantes de la mitad derecha
-    while (j < n2) {
-        arr[k] = R[j];
-        j++;
-        k++;
-    }
-}
-
-// Función de ordenamiento Merge Sort
-void mergeSort(std::vector<Person>& arr, int left, int right) {
-    if (left < right) {
-        int mid = left + (right - left) / 2;
-        mergeSort(arr, left, mid);
-        mergeSort(arr, mid + 1, right);
-        merge(arr, left, mid, right);
-    }
-}
+#include <string>
+#include "ticket.h"
+#include "file.h"
+#include "bst.h"
 
 // Funciones para generar datos aleatorios
 
-// Genera un ID aleatorio de 10 cifras
 long long generateId() {
-    return 1000000000 + std::rand() % 9000000000;
+    return 1000000000 + (std::rand() % 1000000000); // Rango de 1000000000 a 1999999999
 }
 
-// Genera un número de teléfono aleatorio
-long long generatePhone() {
-    return 3000000000 + std::rand() % 999999999;
+std::string generatePlate() {
+    std::string plate;
+
+    for (int i = 0; i < 3; ++i) {
+        char randomLetter = 'A' + std::rand() % 26;
+        plate += randomLetter;
+    }
+
+    int randomNumber = std::rand() % 1000;
+
+    if (randomNumber < 10) {
+        plate += "00" + std::to_string(randomNumber);
+    } else if (randomNumber < 100) {
+        plate += "0" + std::to_string(randomNumber);
+    } else {
+        plate += std::to_string(randomNumber);
+    }
+
+    return plate;
 }
 
-// Genera una estatura aleatoria en el rango [1.5, 2.5) metros
-double generateStature() {
-    return 1.5 + (std::rand() % 100) / 100.0;
+bool randomBool() {
+    return std::rand() % 2 == 0;
 }
 
-// Genera un peso aleatorio en el rango [50, 150) kg
-double generateWeight() {
-    return 50 + (std::rand() % 100);
+// Función para validar la fecha
+bool isValidDate(int year, int month, int day) {
+    if (year < 1990 || year > 2024) return false;
+    if (month < 1 || month > 12) return false;
+    if (day < 1 || day > 31) return false;
+    if (month == 2) {
+        if (day > 29) return false;
+        if (day == 29 && (year % 4 != 0 || (year % 100 == 0 && year % 400 != 0))) return false;
+    }
+    if ((month == 4 || month == 6 || month == 9 || month == 11) && day > 30) return false;
+    return true;
 }
 
-// Genera una dificultad aleatoria en el rango [0.0, 10.0)
-double generateDifficulty() {
-    return (std::rand() % 100) / 10.0;
-}
-
-// Genera una ejecución aleatoria en el rango [0.0, 10.0)
-double generateExecution() {
-    return (std::rand() % 100) / 10.0;
+// Función para verificar que la placa tenga el formato correcto
+bool isValidPlate(const std::string& plate) {
+    if (plate.size() != 6) return false;
+    for (int i = 0; i < 3; ++i) {
+        if (!isalpha(plate[i])) return false;
+    }
+    for (int i = 3; i < 6; ++i) {
+        if (!isdigit(plate[i])) return false;
+    }
+    return true;
 }
 
 int main() {
-    // Inicializar la semilla para la generación de números aleatorios
-    std::srand(static_cast<unsigned int>(std::time(0)));
+    std::srand(static_cast<unsigned int>(std::time(0))); // Inicializa la semilla para números aleatorios
 
-    // Archivos para nombres de hombres y mujeres
-    std::vector<std::string> files;
-    files.push_back("Fnames.txt");
-    files.push_back("Mnames.txt");
+    // Archivos de nombres que se usarán para obtener nombres aleatorios
+    std::vector<std::string> files = {"Fnames.txt", "Mnames.txt"};
+    // Años, meses y días válidos para la generación de tickets
+    std::vector<int> years = {1990, 1992, 1994, 1996, 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018};
+    std::vector<int> months = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+    std::vector<int> days = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31};
 
-    // Leer nombres desde los archivos
     File file;
-    file.readFromFiles(files);
+    file.readFromFiles(files); // Lee nombres desde archivos
 
-    // Crear un vector para almacenar objetos Person
-    std::vector<Person> nodos;
+    // Crear un árbol binario de búsqueda para almacenar los tickets
+    BinarySearchTree bst;
 
-    int numPersonas;
-    std::cout << "Ingrese el número de personas que desea generar: ";
-    std::cin >> numPersonas;
+    // Generar tickets y agregarlos al árbol
+    for (int i = 0; i < 356789; ++i) {
+        int year = years[std::rand() % years.size()];
+        int month = months[std::rand() % months.size()];
+        int day = days[std::rand() % days.size()];
+        int idPicture = std::rand() % 5000;
+        int idCamara = std::rand() % 70;
+        long long idOwner = generateId();
+        std::string plate = generatePlate();
+        std::string name = file.randomItem();
+        bool speedViolation = randomBool();
 
-    // Generar objetos Person con datos aleatorios
-    for (int i = 0; i < numPersonas; ++i) {
-        std::string nombreAleatorio = file.randomItem();
-        int edadAleatoria = 18 + std::rand() % 12;
-        long long idAleatorio = generateId();
-        std::string gender = file.chooseGender(nombreAleatorio);
-        std::string country = file.chooseCountry();
-        std::string email = nombreAleatorio + "@gmail.com";
-        long long phone = generatePhone();
-        double stature = generateStature();
-        double weight = generateWeight();
-        double difficulty = generateDifficulty();
-        double execution = generateExecution();
-        Person personaAleatoria(nombreAleatorio, edadAleatoria, idAleatorio, gender, country, email, phone, stature, weight, difficulty, execution);
-        nodos.emplace_back(personaAleatoria);
+        // Crear un ticket con los datos generados
+        Ticket ticket(year, month, day, idPicture, idCamara, idOwner, plate, name, speedViolation);
+
+        // Insertar el ticket en el árbol usando la matrícula como llave
+        bst.insert(plate, ticket);
     }
 
-    // Comenzar a medir el tiempo de ejecución
-    auto start = std::chrono::high_resolution_clock::now();
+    // Imprimir todos los tickets en orden
+    bst.printInOrder();
 
-    // Ordenar los objetos Person por su puntuación total
-    mergeSort(nodos, 0, nodos.size() - 1);
+    // Permitir al usuario ingresar datos para búsqueda
+    for (int i = 0; i < 5; ++i) {
 
-    // Terminar de medir el tiempo de ejecución
-    auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> duration = end - start;
-    std::cout << "Sorting took " << duration.count() << " seconds." << std::endl;
+        std::string plate;
+        int year, month, day;
 
-    // Imprimir los 10 mejores gimnastas
-    std::cout << "\nTop 10 Gymnasts:\n";
-    for (int i = 0; i < std::min(10, static_cast<int>(nodos.size())); ++i) {
-        std::cout << nodos[i].getData() << std::endl;
+        while (true) {
+            std::cout << "Ingrese el número de placa (ejm: AAA000): ";
+            std::cin >> plate;
+            if (isValidPlate(plate)) break;
+            std::cout << "Placa inválida. Por favor, ingrese la placa en el formato correcto (ejm: AAA000)." << std::endl;
+        }
+
+        while (true) {
+            std::cout << "Ingrese la fecha en formato AÑO MES DÍA (ejm: 2019 3 17): ";
+            std::cin >> year >> month >> day;
+            if (isValidDate(year, month, day)) break;
+            std::cout << "Fecha inválida. Por favor, ingrese la fecha en el formato correcto." << std::endl;
+        }
+
+        // Buscar el ticket en el árbol
+        Ticket foundTicket = bst.search(plate);
+
+        bool foundViolation = false;
+
+        // Verificar si el ticket encontrado corresponde a la placa y fecha especificadas
+        if (foundTicket.getPlate() == plate && foundTicket.getYear() == year &&
+            foundTicket.getMonth() == month && foundTicket.getDay() == day) {
+            if (foundTicket.getSpeedViolation()) {
+                foundViolation = true;
+                std::cout << "El vehículo con la placa " << plate << " tiene una multa por exceso de velocidad en la fecha " << year << "-" << month << "-" << day << "." << std::endl;
+                std::cout << "Detalles del evento:" << std::endl;
+                std::cout << "ID de la imagen: " << foundTicket.getIdPicture() << std::endl;
+                std::cout << "ID de la cámara: " << foundTicket.getIdCamara() << std::endl;
+                std::cout << "ID del propietario: " << foundTicket.getIdOwner() << std::endl;
+                std::cout << "Nombre del propietario: " << foundTicket.getName() << std::endl;
+            }
+        }
+
+        if (!foundViolation) {
+            std::cout << "El vehículo con la placa " << plate << " no excedió la velocidad en ninguna de las 70 cámaras en la fecha " << year << "-" << month << "-" << day << "." << std::endl;
+        }
     }
-
-    // Imprimir los 5 peores gimnastas
-    std::cout << "\nBottom 5 Gymnasts:\n";
-    for (int i = std::max(0, static_cast<int>(nodos.size()) - 5); i < nodos.size(); ++i) {
-        std::cout << nodos[i].getData() << std::endl;
-    }
-
     return 0;
 }

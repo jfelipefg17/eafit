@@ -18,15 +18,22 @@ Para compilar el programa, sigue estos pasos:
     ```bash
     g++ -c file.cpp
     ```
-2. Compila el archivo `person.cpp`:
+2. Compila el archivo `ticket.cpp`:
     ```bash
-    g++ -c person.cpp
+    g++ -c ticket.cpp
     ```
-3. Compila y enlaza el archivo `main.cpp` con los objetos generados:
+
+3. Compila el archivo `bts.cpp`:
     ```bash
-    g++ -o main main.cpp person.o file.o
+    g++ -c bst.cpp
     ```
-4. Ejecuta el programa:
+
+4. Compila y enlaza el archivo `main.cpp` con los objetos generados:
+    ```bash
+    g++ -std=c++11 -o main main.cpp ticket.o file.o bst.o
+
+    ```
+5. Ejecuta el programa:
     ```bash
     ./main
     ```
