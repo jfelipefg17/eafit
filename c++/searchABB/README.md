@@ -28,17 +28,12 @@ Para compilar el programa, sigue estos pasos:
     g++ -c bst.cpp
     ```
 
-4. Compila el archivo `car.cpp`:
+4. Compila y enlaza el archivo `main.cpp` con los objetos generados:
     ```bash
-    g++ -c car.cpp
-    ```
-   
-5. Compila y enlaza el archivo `main.cpp` con los objetos generados:
-    ```bash
-    g++ -std=c++11 -o main main.cpp ticket.o file.o bst.o car.o
+    g++ -std=c++11 -o main main.cpp ticket.o file.o bst.o
 
     ```
-6. Ejecuta el programa:
+5. Ejecuta el programa:
     ```bash
     ./main
     ```

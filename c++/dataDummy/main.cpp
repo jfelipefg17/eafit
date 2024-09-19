@@ -3,9 +3,11 @@
 #include <cstdlib>
 #include <ctime>
 #include <string>
+#include <random>
 #include "ticket.h"
 #include "file.h"
 #include "bst.h"
+#include "car.h"
 
 // Funciones para generar datos aleatorios
 
@@ -63,50 +65,85 @@ bool isValidPlate(const std::string& plate) {
     return true;
 }
 
-int main() {
-    std::srand(static_cast<unsigned int>(std::time(0))); // Inicializa la semilla para números aleatorios
+int generateRandomNumber(int min, int max) {
+    std::random_device rd;  // Generador aleatorio basado en hardware
+    std::mt19937 gen(rd()); // Motor Mersenne Twister
+    std::uniform_int_distribution<> distrib(min, max); // Distribución uniforme en el rango [min, max]
+    return distrib(gen);
+}
 
-    // Archivos de nombres que se usarán para obtener nombres aleatorios
+
+int main() {
     std::vector<std::string> files = {"Fnames.txt", "Mnames.txt"};
-    // Años, meses y días válidos para la generación de tickets
     std::vector<int> years = {1990, 1992, 1994, 1996, 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018};
     std::vector<int> months = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
     std::vector<int> days = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31};
 
+    // Vector para almacenar los objetos Car
+    std::vector<Car> cars;
+
     File file;
     file.readFromFiles(files); // Lee nombres desde archivos
 
-    // Crear un árbol binario de búsqueda para almacenar los tickets
-    BinarySearchTree bst;
-
-    // Generar tickets y agregarlos al árbol
+    // Genera los carros
     for (int i = 0; i < 356789; ++i) {
-        int year = years[std::rand() % years.size()];
-        int month = months[std::rand() % months.size()];
-        int day = days[std::rand() % days.size()];
-        int idPicture = std::rand() % 5000;
-        int idCamara = std::rand() % 70;
         long long idOwner = generateId();
         std::string plate = generatePlate();
         std::string name = file.randomItem();
-        bool speedViolation = randomBool();
 
-        // Crear un ticket con los datos generados
-        Ticket ticket(year, month, day, idPicture, idCamara, idOwner, plate, name, speedViolation);
-
-        // Insertar el ticket en el árbol usando la matrícula como llave
-        bst.insert(plate, ticket);
+        Car car(idOwner, plate, name);
+        cars.push_back(car);
     }
 
-    // Imprimir todos los tickets en orden
-    bst.printInOrder();
+    // Vector para almacenar los tickets
+    std::vector<Ticket> tickets;
 
+    // Genera tickets en orden de fecha
+    for (int year : years) {
+        for (int month : months) {
+            for (int day : days) {
+                int numTickets = generateRandomNumber(1000, 2500);
+
+                for (int i = 0; i < numTickets; ++i) {
+                    int randomNumber2 = generateRandomNumber(0, cars.size() - 1); // Elige un carro al azar
+                    Car selectedCar = cars[randomNumber2]; // Obtiene el carro aleatorio
+
+                    int idPicture = std::rand() % 5000;
+                    int idCamara = std::rand() % 70;
+                    bool speedViolation = randomBool();
+
+                    // Crea un ticket con el carro seleccionado
+                    Ticket ticket(year, month, day, idPicture, idCamara, selectedCar, speedViolation);
+
+                    // Añade el ticket a la lista de tickets
+                    tickets.push_back(ticket);
+                }
+            }
+        }
+    }
+
+    std::srand(static_cast<unsigned int>(std::time(0))); // Inicializa la semilla para números aleatorios
+
+
+
+    // Imprimir los primeros 10 tickets generados
+    std::cout << "Primeros 10 tickets generados:\n";
+    for (size_t i = 0; i < 10 && i < tickets.size(); ++i) {
+        std::cout << "Ticket " << i + 1 << ":\n";
+        std::cout << "Fecha: " << tickets[i].getYear() << "-" << tickets[i].getMonth() << "-" << tickets[i].getDay() << "\n";
+        std::cout << "ID de la imagen: " << tickets[i].getIdPicture() << "\n";
+        std::cout << "ID de la cámara: " << tickets[i].getIdCamara() << "\n";
+        std::cout << "Placa del vehículo: " << tickets[i].getCar().getPlate() << "\n";
+        std::cout << "ID del propietario: " << tickets[i].getCar().getIdOwner() << "\n";
+        std::cout << "Nombre del propietario: " << tickets[i].getCar().getName() << "\n";
+        std::cout << "Multa por exceso de velocidad: " << (tickets[i].getSpeedViolation() ? "Sí" : "No") << "\n\n";
+    }
     // Permitir al usuario ingresar datos para búsqueda
     for (int i = 0; i < 5; ++i) {
-
         std::string plate;
         int year, month, day;
 
+        // Validar la placa ingresada
         while (true) {
             std::cout << "Ingrese el número de placa (ejm: AAA000): ";
             std::cin >> plate;
@@ -114,6 +151,7 @@ int main() {
             std::cout << "Placa inválida. Por favor, ingrese la placa en el formato correcto (ejm: AAA000)." << std::endl;
         }
 
+        // Validar la fecha ingresada
         while (true) {
             std::cout << "Ingrese la fecha en formato AÑO MES DÍA (ejm: 2019 3 17): ";
             std::cin >> year >> month >> day;
@@ -121,28 +159,29 @@ int main() {
             std::cout << "Fecha inválida. Por favor, ingrese la fecha en el formato correcto." << std::endl;
         }
 
-        // Buscar el ticket en el árbol
-        Ticket foundTicket = bst.search(plate);
-
+        // Buscar el ticket en la lista
         bool foundViolation = false;
-
-        // Verificar si el ticket encontrado corresponde a la placa y fecha especificadas
-        if (foundTicket.getPlate() == plate && foundTicket.getYear() == year &&
-            foundTicket.getMonth() == month && foundTicket.getDay() == day) {
-            if (foundTicket.getSpeedViolation()) {
-                foundViolation = true;
-                std::cout << "El vehículo con la placa " << plate << " tiene una multa por exceso de velocidad en la fecha " << year << "-" << month << "-" << day << "." << std::endl;
-                std::cout << "Detalles del evento:" << std::endl;
-                std::cout << "ID de la imagen: " << foundTicket.getIdPicture() << std::endl;
-                std::cout << "ID de la cámara: " << foundTicket.getIdCamara() << std::endl;
-                std::cout << "ID del propietario: " << foundTicket.getIdOwner() << std::endl;
-                std::cout << "Nombre del propietario: " << foundTicket.getName() << std::endl;
+        for (const Ticket& ticket : tickets) {
+            if (ticket.getCar().getPlate() == plate && ticket.getYear() == year &&
+                ticket.getMonth() == month && ticket.getDay() == day) {
+                if (ticket.getSpeedViolation()) {
+                    foundViolation = true;
+                    std::cout << "El vehículo con la placa " << plate << " tiene una multa por exceso de velocidad en la fecha "
+                              << year << "-" << month << "-" << day << "." << std::endl;
+                    std::cout << "Detalles del evento:" << std::endl;
+                    std::cout << "ID de la imagen: " << ticket.getIdPicture() << std::endl;
+                    std::cout << "ID de la cámara: " << ticket.getIdCamara() << std::endl;
+                    std::cout << "ID del propietario: " << ticket.getCar().getIdOwner() << std::endl;
+                    std::cout << "Nombre del propietario: " << ticket.getCar().getName() << std::endl;
+                }
             }
         }
 
         if (!foundViolation) {
-            std::cout << "El vehículo con la placa " << plate << " no excedió la velocidad en ninguna de las 70 cámaras en la fecha " << year << "-" << month << "-" << day << "." << std::endl;
+            std::cout << "El vehículo con la placa " << plate << " no tiene una multa por exceso de velocidad en la fecha "
+                      << year << "-" << month << "-" << day << "." << std::endl;
         }
     }
+
     return 0;
 }
