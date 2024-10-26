@@ -10,7 +10,7 @@
 class MatrizAdyacencia {
     private:
         std::vector<Ciudad> ciudades;                         // Vector de ciudades
-        std::vector<std::vector<Data*>> matrizAdyacencia;     // Matriz de adyacencia
+        std::vector<std::vector<Data*> > matrizAdyacencia;     // Matriz de adyacencia
         std::unordered_map<std::string, int> nombreCiudadAId; // Mapa de nombres de ciudades a sus IDs
 
     public:
