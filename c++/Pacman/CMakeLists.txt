@@ -3,4 +3,5 @@ project(Pacman)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Pacman main.cpp)
+add_executable(Pacman main.cpp
+        dijkstra.cpp)

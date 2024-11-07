@@ -12,6 +12,7 @@ public:
     int obtenerIndice(int x, int y) const;
     const std::vector<std::vector<std::pair<int, int>>>& obtenerListaAdyacencia() const;
     int obtenerColumnas() const { return columnas; } // Método de acceso para `columnas`
+    void generarAristasCercanas(); // Nueva función
 
 private:
     int columnas;
