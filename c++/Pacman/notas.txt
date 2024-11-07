@@ -1,0 +1,6 @@
+docuentar todo
+
+que si use dijkstra bien
+que no use ninguna lubreria rara
+que sea compatible con c++11 por que esta con el 17
+mirar que mas falta segun el doc
