@@ -1,4 +1,0 @@
-docuentar todo
-
-que no use ninguna lubreria rara
-separar el grafo de dijlstra creando un grafo.cpp y .h

@@ -2,20 +2,16 @@
 #define DIJKSTRA_H
 
 #include <vector>
-#include <utility>  // Para std::pair
+#include <utility>
 
 // Clase para representar el grafo como una lista de adyacencia
 class Grafo {
 public:
-    Grafo(int filas, int columnas);
-    void agregarArista(int origenX, int origenY, int destinoX, int destinoY, int peso);
-    int obtenerIndice(int x, int y) const;
+    Grafo(int numVertices);
+    void agregarArista(int origen, int destino, int peso);
     const std::vector<std::vector<std::pair<int, int>>>& obtenerListaAdyacencia() const;
-    int obtenerColumnas() const { return columnas; } // Método de acceso para `columnas`
-    void generarAristasCercanas(); // Nueva función
 
 private:
-    int columnas;
     std::vector<std::vector<std::pair<int, int>>> listaAdyacencia;
 };
 
@@ -23,7 +19,7 @@ private:
 class Dijkstra {
 public:
     Dijkstra(const Grafo& grafo);
-    std::vector<std::pair<int, int>> encontrarCaminoMasCorto(int inicioX, int inicioY, int finalX, int finalY);
+    std::vector<int> encontrarCaminoMasCorto(int inicio, int final);
 
 private:
     const Grafo& grafo;
