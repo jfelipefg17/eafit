@@ -1,0 +1,3 @@
+/Users/felipeflorez/Documents/programming/eafit/semester6/Telematica/basic/cmake-build-debug/CMakeFiles/basic.dir
+/Users/felipeflorez/Documents/programming/eafit/semester6/Telematica/basic/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/felipeflorez/Documents/programming/eafit/semester6/Telematica/basic/cmake-build-debug/CMakeFiles/rebuild_cache.dir
