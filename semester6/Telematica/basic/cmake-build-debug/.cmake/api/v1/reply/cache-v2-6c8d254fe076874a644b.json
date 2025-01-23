@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/felipeflorez/Documents/Programming/EAFIT/C/bases/cmake-build-debug"
+			"value" : "/Users/felipeflorez/Documents/programming/eafit/semester6/Telematica/basic/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "29"
+			"value" : "30"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "6"
+			"value" : "5"
 		},
 		{
 			"name" : "CMAKE_COLOR_DIAGNOSTICS",
@@ -383,7 +383,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/felipeflorez/Documents/Programming/EAFIT/C/bases/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/felipeflorez/Documents/programming/eafit/semester6/Telematica/basic/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -443,7 +443,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/felipeflorez/Documents/Programming/EAFIT/C/bases"
+			"value" : "/Users/felipeflorez/Documents/programming/eafit/semester6/Telematica/basic"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -723,7 +723,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "bases"
+			"value" : "basic"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -767,7 +767,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29"
+			"value" : "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1022,7 +1022,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "bases_BINARY_DIR",
+			"name" : "basic_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1031,10 +1031,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/felipeflorez/Documents/Programming/EAFIT/C/bases/cmake-build-debug"
+			"value" : "/Users/felipeflorez/Documents/programming/eafit/semester6/Telematica/basic/cmake-build-debug"
 		},
 		{
-			"name" : "bases_IS_TOP_LEVEL",
+			"name" : "basic_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1046,7 +1046,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "bases_SOURCE_DIR",
+			"name" : "basic_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1055,7 +1055,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/felipeflorez/Documents/Programming/EAFIT/C/bases"
+			"value" : "/Users/felipeflorez/Documents/programming/eafit/semester6/Telematica/basic"
 		}
 	],
 	"kind" : "cache",
