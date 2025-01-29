@@ -13,7 +13,6 @@ public class Main {
     public static void main(String[] args) {
 
         Main main = new Main();
-
         main.main1(1, 2);
 
 
@@ -26,8 +25,8 @@ public class Main {
 
         // Imprime las variables declaradas
         System.out.println("//// Variables ////");
-        System.out.printf("Entero: %d, Flotante: %.2f, Caracter: %c, Doble: %.4f, Cadena: %s\n", entero, flotante, caracter, doble, cadena);
-        System.out.println("///////////////////\n");
+        System.out.println(entero + "/" + flotante + "/" + caracter + "/" + doble + "/" + cadena);
+        System.out.println("///////////////////");
 
         // 2. Uso de if, else if y else para evaluar condiciones
         System.out.println("//// Condicionales ////");
@@ -38,33 +37,33 @@ public class Main {
         } else { // Si el entero es menor que 10
             System.out.println("El entero es menor que 10");
         }
-        System.out.println("/////////////////////\n");
+        System.out.println("/////////////////////");
 
         // 3. Declaración y uso de un array con un bucle while
         System.out.println("//// Bucle While ////");
         int[] arreglo = {1, 2, 3, 4, 5}; // Declaración de un arreglo de 5 elementos
         int i = 0; // Inicialización de contador
         while (i < 5) { // Mientras i sea menor que 5
-            System.out.printf("Elemento %d: %d\n", i, arreglo[i]); // Imprime cada elemento del arreglo
+            System.out.println("Elemento " + i + ": " + arreglo[i]); // Imprime cada elemento del arreglo
             i++; // Incrementa i
         }
-        System.out.println("///////////////////\n");
+        System.out.println("///////////////////");
 
         // 4. Bucle do-while
         System.out.println("//// Bucle Do-While ////");
         i = 0;
         do {
-            System.out.printf("Elemento %d: %d\n", i, arreglo[i]); // Imprime elementos del arreglo
+            System.out.println("Elemento " + i + ": " + arreglo[i]); // Imprime elementos del arreglo
             i++;
         } while (i < 5); // Se ejecuta al menos una vez
-        System.out.println("///////////////////////\n");
+        System.out.println("///////////////////////");
 
         // 5. Bucle for
         System.out.println("//// Bucle For ////");
         for (i = 0; i < 5; i++) { // Recorre el arreglo usando un bucle for
-            System.out.printf("Elemento %d: %d\n", i, arreglo[i]);
+            System.out.println("Elemento " + i + ": " + arreglo[i]);
         }
-        System.out.println("///////////////////\n");
+        System.out.println("///////////////////");
 
         // 6. Uso de switch para evaluar un caracter
         System.out.println("//// Estructura Switch ////");
@@ -79,32 +78,32 @@ public class Main {
                 System.out.println("Caracter no identificado");
                 break;
         }
-        System.out.println("////////////////////////\n");
+        System.out.println("////////////////////////");
 
         // 7. Manejo de errores con try-catch
         System.out.println("//// Try-Catch ////");
         int divisor = 0; // Simula un divisor igual a cero
         try {
-            System.out.printf("Resultado: %d\n", entero / divisor);
+            System.out.println("Resultado: " + (entero / divisor));
         } catch (ArithmeticException e) {
             System.out.println("Error: División por cero detectada.");
         }
-        System.out.println("///////////////////////////\n");
+        System.out.println("///////////////////////////");
 
         // 8. Ejemplo combinado de todo
         System.out.println("//// Ejemplo Completo ////");
         if (entero < 20) { // Verifica si el entero es menor que 20
             for (i = 0; i < 5; i++) { // Bucle for para recorrer elementos
-                System.out.printf("Iteracion %d: Entero=%d, Flotante=%.2f, Caracter=%c, Cadena=%s\n", i, entero, flotante, caracter, cadena);
+                System.out.println("Iteracion " + i + ": Entero=" + entero + ", Flotante=" + flotante + ", Caracter=" + caracter + ", Cadena=" + cadena);
             }
             i = 0;
             while (i < 5) { // Bucle while dentro del ejemplo combinado
-                System.out.printf("While Iteracion %d: %d\n", i, arreglo[i]);
+                System.out.println("While Iteracion " + i + ": " + arreglo[i]);
                 i++;
             }
             divisor = 0; // Simulación de error dentro del ejemplo combinado
             try {
-                System.out.printf("Resultado: %d\n", entero / divisor);
+                System.out.println("Resultado: " + (entero / divisor));
             } catch (ArithmeticException e) {
                 System.out.println("Error: División por cero detectada en el ejemplo combinado.");
             }
@@ -113,5 +112,4 @@ public class Main {
         }
         System.out.println("/////////////////////////");
     }
-
 }
