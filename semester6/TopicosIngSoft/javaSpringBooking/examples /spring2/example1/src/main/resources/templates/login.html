@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="/templatesFragments/head :: head"> </head>
+
+
+<body>
+
+<nav>
+  <a href="/register">Sing Up</a>
+</nav>
+
+<div class="containerImg">
+  <a href="#" class="navbar-brand d-flex align-items-center">
+    <img class="logo" src="/img/Egg.png" alt="Img logo egg">
+  </a>
+</div>
+
+<header>
+  <div class="container">
+    <h1>Login Library</h1>
+  </div>
+</header>
+
+<div class="container">
+  <form th:action="@{/loginCheck}" method="post">
+
+    <div>
+      <h3>Login</h3>
+    </div>
+    <div>
+      <input type="email" class="form-group" name= "email" placeholder="Email" th:value="${email}">
+    </div>
+    <div>
+      <input type="password" class="form-group" name= "password" placeholder="PASSWORD" th:value="${password1}">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
+</div>
+
+
+
+<!--handle errors-->
+
+<div th:if="${Error != null}" class="card text-white bg-danger mb-3 messageError">
+  <div class="card-body">
+    <h5 class="card-tittle">! ERROR !</h5>
+    <p class="card-text" th:text="${Error}" ></p>
+  </div>
+
+</div>
+
+<div th:if="${Good != null}" class="card text-white bg-success mb-3 mt-3 messageGood">
+  <div class="card-body">
+    <h5 class="card-tittle">! GOOD !</h5>
+    <p class="card-text" th:text="${Good}"></p>
+  </div>
+</div>
+
+
+<main>
+
+</main>
+
+<footer>
+  <p>&copy; 2023 Mi Página Web</p>
+</footer>
+
+<!-- Puedes incluir tus scripts JavaScript aquí -->
+<script src="script.js"></script>
+</body>
+</html>

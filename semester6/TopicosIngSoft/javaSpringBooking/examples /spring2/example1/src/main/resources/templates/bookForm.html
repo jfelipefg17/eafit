@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head >
+  <meta charset="ISO-8859-1">
+  <title>Book Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/forms.css">
+</head>
+
+  <body>
+
+  <nav>
+    <a href="/book/list">BOOKS</a>
+
+  </nav>
+
+    <header>
+      <div class="container">
+        <h1>Book Form</h1>
+      </div>
+    </header>
+
+
+    <!-- Form-->
+
+    <div class="container">
+      <form th:action="@{/book/registration}" method="post">
+
+        <!--handle errors-->
+
+        <div th:if="${Error != null}" class="card text-white bg-danger mb-3 messageError">
+          <div class="card-body">
+            <h5 class="card-tittle">! ERROR !</h5>
+            <p class="card-text" th:text="${Error}" ></p>
+          </div>
+
+        </div>
+
+        <div th:if="${Good != null}" class="card text-white bg-success mb-3 mt-3 messageGood">
+          <div class="card-body">
+            <h5 class="card-tittle">! GOOD !</h5>
+            <p class="card-text" th:text="${Good}"></p>
+          </div>
+
+        </div>
+
+
+        <div>
+          <input type="number" class="form-group" name= "isbn" placeholder="ISBN:">
+        </div>
+
+        <div>
+          <input type="text" class="form-group" name= "tittle" placeholder="Tittle:">
+        </div>
+
+        <div>
+          <input type="number" class="form-group" name= "numberBook" placeholder="Number of books:">
+        </div>
+
+        <div>
+          <select name="idAuthor">
+            <option>Select Author</option>
+
+            <option th:each="author : ${authors}"
+                    th:value="${author.id}"
+                    th:text="${author.name}"/>
+          </select>
+        </div>
+
+        <div>
+          <select name="idPublisher">
+            <option>Select Publisher</option>
+
+            <option th:each="publisher : ${publishers}"
+                    th:value="${publisher.id}"
+                    th:text="${publisher.name}"/>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send</button>
+
+      </form>
+    </div>
+
+
+
+    <main>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Mi Página Web</p>
+    </footer>
+
+    <!-- Puedes incluir tus scripts JavaScript aquí -->
+    <script src="script.js"></script>
+
+  </body>
+</html>

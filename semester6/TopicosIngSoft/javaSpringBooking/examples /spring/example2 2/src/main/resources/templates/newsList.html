@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Web</title>
+  <!-- Puedes enlazar tus estilos CSS aquí -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>News List</h1>
+  </div>
+</header>
+
+
+<div class="container m-5">
+
+  <table class="table table-dark">
+
+    <thead>
+    <tr>
+      <th scope="col">TITTLE</th>
+      <th scope="col">BODY</th>
+      <th scope="col">MODIFY</th>
+    </tr>
+    </thead>
+
+    <tbody th:each="news : ${newss}">
+    <tr>
+      <td th:text="${news.tittle}"></td>
+      <td th:text="${news.body}"></td>
+      <td>
+        <a th:href="@{/news/modify/__${news.tittle}__}"><i class="fas fa-edit"></i> Modify </a>
+      </td>
+    </tr>
+
+
+  </table>
+
+</div>
+
+
+
+<main>
+
+</main>
+
+<footer>
+  <p>&copy; 2023 Mi Página Web</p>
+</footer>
+
+<!-- Puedes incluir tus scripts JavaScript aquí -->
+<script src="script.js"></script>
+
+</body>
+</html>

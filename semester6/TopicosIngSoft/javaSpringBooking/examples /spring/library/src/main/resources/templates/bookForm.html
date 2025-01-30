@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <!-- Puedes enlazar tus estilos CSS aquí -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+
+
+  </head>
+  <body>
+
+  <nav>
+    <a href="/book/list">BOOKS</a>
+
+  </nav>
+
+    <header>
+      <div class="container">
+        <h1>Book Form</h1>
+      </div>
+    </header>
+
+
+    <!-- Form-->
+
+    <div class="container">
+      <form action="/book/registration" method="post">
+
+        <!--handle errors-->
+
+        <div th:if="${Error != null}" class="card text-white bg-danger mb-3 messageError">
+          <div class="card-body">
+            <h5 class="card-tittle">! ERROR !</h5>
+            <p class="card-text" th:text="${Error}" ></p>
+          </div>
+
+        </div>
+
+        <div th:if="${Good != null}" class="card text-white bg-success mb-3 mt-3 messageGood">
+          <div class="card-body">
+            <h5 class="card-tittle">! GOOD !</h5>
+            <p class="card-text" th:text="${Good}"></p>
+          </div>
+
+        </div>
+
+
+        <div>
+          <input type="number" class="form-group" name= "isbn" placeholder="ISBN:">
+        </div>
+
+        <div>
+          <input type="text" class="form-group" name= "tittle" placeholder="Tittle:">
+        </div>
+
+        <div>
+          <input type="number" class="form-group" name= "numberBook" placeholder="Number of books:">
+        </div>
+
+        <div>
+          <select name="idAuthor">
+            <option>Select Author</option>
+
+            <option th:each="author : ${authors}"
+                    th:value="${author.id}"
+                    th:text="${author.name}"/>
+          </select>
+        </div>
+
+        <div>
+          <select name="idPublisher">
+            <option>Select Publisher</option>
+
+            <option th:each="publisher : ${publishers}"
+                    th:value="${publisher.id}"
+                    th:text="${publisher.name}"/>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send</button>
+
+      </form>
+    </div>
+
+
+
+    <main>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Mi Página Web</p>
+    </footer>
+
+    <!-- Puedes incluir tus scripts JavaScript aquí -->
+    <script src="script.js"></script>
+
+  </body>
+</html>

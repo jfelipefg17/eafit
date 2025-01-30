@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+
+<head th:replace="/templatesFragments/head :: head"> </head>
+
+
+<body>
+
+<nav>
+  <a href="/book/list">Books</a>
+  <a href="/author/list">Authors</a>
+  <a href="/publisher/list">Publishers</a>
+  <a href="/logOut">LogOut</a>
+  <a href="/profile">Profile</a>
+
+</nav>
+
+<!-- Contenido de la página -->
+<div >
+  <h2>Contenido de la Página</h2>
+  <div class="containerImg">
+    <a href="#" class="navbar-brand d-flex align-items-center">
+      <img class="logo" src="/img/Egg.png" alt="Img logo egg">
+    </a>
+  </div>
+  <p>Aquí va el contenido de tu página.</p>
+
+  <div class="container contenedorLibros">
+    <p class="tituloLibros" th:if="${session.userSession != null}" th:text=" 'Hi ' + ${session.userSession.name}  "></p>
+  </div>
+
+  <div class="container">
+    <a th:if="${session.userSession.image != null}" class="d-flex align-items-center">
+      <img class="logo"  th:src="@{/image/profile/__${session.userSession.id}__}" >
+    </a>
+  </div>
+
+
+</div>
+
+</body>
+</html>
