@@ -4,7 +4,7 @@
 This project is a **Library Management System** developed using **Java Spring Boot**, **MySQL**, **JPA (Java Persistence API)**, and **Hibernate**. The frontend utilizes **Thymeleaf** to render dynamic content. Security is handled with **Spring Security**, which manages user authentication and authorization.
 
 ## Technologies Used
-- **Java 11+**
+- **Java 17+**
 - **Spring Boot**
 - **Spring Security**
 - **Spring Data JPA**
@@ -25,7 +25,7 @@ This project follows a **monolithic architecture** but is designed with future *
 
 ## User Roles and Security
 The system has two user roles:
-- **USER (Default)**: Can only view books and authors.
+- **USER (Default)**: Can only view books, publishers and authors.
 - **ADMIN**: Can add, modify, and delete books, authors, and publishers.
 
 **Authentication & Session Management:**

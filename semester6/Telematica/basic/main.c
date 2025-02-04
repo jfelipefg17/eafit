@@ -15,7 +15,7 @@ int main(void) {
 
     // 2. Uso de if, else if y else para evaluar condiciones
     printf("//// Condicionales ////\n");
-    if (entero > 10) { // Si el entero es mayor que 10
+    if (entero > 10) { // Si el entero es mayor que 10k,;;
         printf("El entero es mayor que 10\n");
     } else if (entero == 10) { // Si el entero es igual a 10
         printf("El entero es igual a 10\n");
