@@ -41,7 +41,18 @@ The system has two user roles:
 
 ### ❌ Known Issues
 1. **User Image Not Displaying:** Uploaded images are not correctly rendered.
-2. **Admin Role Handling:** After registering as an admin, the system redirects to a normal user view instead of keeping admin privileges.
+2. **Admin Role Handling:** After registering as an admin, the system redirects to a normal user view instead of keeping admin privileges 
+
+(Configurar vistas y controladores con roles:
+   En los controladores (@Controller), restringes el acceso con @PreAuthorize("hasRole('ADMIN')") o en WebSecurity con .antMatchers("/admin/**").hasRole("ADMIN").
+   Usar Thymeleaf para mostrar u ocultar elementos según el rol (sec:authorize="hasRole('ADMIN')").
+
+   Panel de administración dedicado:
+   Tener una URL exclusiva como /admin/dashboard donde los administradores gestionan libros, autores, etc.
+   Redirigir a los usuarios normales a /home y a los administradores a /admin/dashboard tras iniciar sesión. Esto se puede hacer con un SuccessHandler personalizado en Spring Security.
+
+   Persistencia del rol en la sesión:
+   Actualmente, al registrarse como ADMIN, parece que el rol se pierde al navegar. Esto se soluciona asegurando que el rol se almacene correctamente en la sesión (HttpSession) y se consulte en cada request).
 3. **Error Handling:** Currently, error messages are poorly displayed. Need proper alerts and validations.
 4. **Navigation Issues:** Missing "Go Back" buttons on many pages.
 
