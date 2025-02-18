@@ -68,7 +68,7 @@ SELECT COUNT(*) FROM publisher;
 
 -- Mostrar todos los usuarios
 SELECT * FROM user;
-
+role
 -- Mostrar un usuario por ID
 SELECT * FROM user WHERE id = 'ID_DEL_USUARIO';
 
@@ -86,4 +86,8 @@ SELECT * FROM user WHERE role = 'ADMIN';
 
 -- Mostrar usuarios con imagen asociada
 SELECT * FROM user WHERE image_id IS NOT NULL;
+
+-- importante cambiar tipo de usuario a ADMIN 
+UPDATE user SET role = 'ADMIN' WHERE id = '7fd6af46-abee-4382-b122-f71a37d313fc';
+
 
