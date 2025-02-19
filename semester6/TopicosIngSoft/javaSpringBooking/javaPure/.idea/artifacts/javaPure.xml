@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="javaPure">
+    <output-path>$PROJECT_DIR$/out/artifacts/javaPure</output-path>
+    <root id="archive" name="javaPure.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="javaPure" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: jakarta.servlet:jakarta.servlet-api:6.1.0" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
