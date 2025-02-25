@@ -4,6 +4,7 @@ package com.Taller01.Taller01.models;
 import jakarta.persistence.Entity;
 import jakarta.persistence.PrimaryKeyJoinColumn;
 
+//class Book
 @Entity
 public class Book {
 
@@ -34,7 +35,6 @@ public class Book {
 
 
     public Book() {
-
     }
 
     public Book(int id, String title, int stock, double price, String image, String author, String publisher, String category, Boolean likes) {
@@ -113,14 +113,13 @@ public class Book {
         this.category = category;
     }
 
-    public Boolean getLike() {
+    public Boolean getLikes() {
         return likes;
     }
 
     public void setLikes(Boolean likes) {
         this.likes = likes;
     }
-
 
     @Override
     public String toString() {

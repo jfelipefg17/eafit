@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
+//connection with database
 @Repository
 public interface BookRepository extends JpaRepository<Book, Integer> {
 
