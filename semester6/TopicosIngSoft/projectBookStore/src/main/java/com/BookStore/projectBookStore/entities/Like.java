@@ -22,16 +22,16 @@ public class Like {
         joinColumns = @jakarta.persistence.JoinColumn(name = "like_id"),
         inverseJoinColumns = @jakarta.persistence.JoinColumn(name = "user_id")
     )
-    private List<User> users = new ArrayList<>();
+    private List<Client> clients = new ArrayList<>();
     private int idEntity = 0;
     private String entityType = "";
     private Date date = new Date();
 
     public Like() {}
 
-    public Like(int id, List<User> users, int idEntity, String entityType, Date date) {
+    public Like(int id, List<Client> clients, int idEntity, String entityType, Date date) {
         this.id = id;
-        this.users = users;
+        this.clients = clients;
         this.idEntity = idEntity;
         this.entityType = entityType;
         this.date = date;
@@ -45,12 +45,12 @@ public class Like {
         this.id = id;
     }
 
-    public List<User> getUsers() {
-        return users;
+    public List<Client> getUsers() {
+        return clients;
     }
 
-    public void setUsers(List<User> users) {
-        this.users = users;
+    public void setUsers(List<Client> clients) {
+        this.clients = clients;
     }
 
     public int getIdEntity() {
@@ -81,7 +81,7 @@ public class Like {
     public String toString() {
         return "Like{" +
                 "id=" + id +
-                ", users=" + users +
+                ", users=" + clients +
                 ", idEntity=" + idEntity +
                 ", entityType='" + entityType + '\'' +
                 ", date=" + date +
