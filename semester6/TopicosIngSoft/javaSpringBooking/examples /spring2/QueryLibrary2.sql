@@ -1,7 +1,7 @@
 /*library2 querys*/
 
 -- Mostrar todos los autores
-SELECT * FROM author;
+SELECT * FROM products;
 
 -- Mostrar un autor por ID
 SELECT * FROM author WHERE id = 'ID_DEL_AUTOR';
@@ -64,11 +64,15 @@ SELECT * FROM publisher WHERE name LIKE '%Penguin%';
 SELECT COUNT(*) FROM publisher;
 
 --------------------------------------------------------------
+INSERT INTO products (name, price) VALUES 
+('MacBook Pro', 3000),
+('iPad', 1000),
+('iPhone', 1200),
+('Apple Watch', 500);
 
 
 -- Mostrar todos los usuarios
 SELECT * FROM user;
-role
 -- Mostrar un usuario por ID
 SELECT * FROM user WHERE id = 'ID_DEL_USUARIO';
 
@@ -90,4 +94,10 @@ SELECT * FROM user WHERE image_id IS NOT NULL;
 -- importante cambiar tipo de usuario a ADMIN 
 UPDATE user SET role = 'ADMIN' WHERE id = '7fd6af46-abee-4382-b122-f71a37d313fc';
 
+
+INSERT INTO comments (description, product_id) VALUES ('Buen producto', 1);
+INSERT INTO comments (description, product_id) VALUES ('Mejor de lo esperado', 1);
+INSERT INTO comments (description, product_id) VALUES ('Excelente calidad', 2);
+INSERT INTO comments (description, product_id) VALUES ('Mala calidad', 2);
+SELECT * FROM comments WHERE product_id = 1;
 
