@@ -1,5 +1,37 @@
 /*library2 querys*/
 
+INSERT INTO roles (name) VALUES ('ADMIN'), ('USER');
+
+INSERT INTO users (name, email, password) 
+VALUES ('admin', 'admin@email.com', '1234567890'); -- Contraseña: admin123 (encriptada con BCrypt)
+
+INSERT INTO user_roles (user_id, role_id) VALUES (1, 1); -- Asignar ADMIN al usuario 1
+
+DESC users;
+SELECT * FROM USERS;
+SELECT email, password FROM users;
+SELECT * FROM users WHERE email = 'mafe@gmail.com';
+
+
+ALTER TABLE users 
+MODIFY email VARCHAR(255) NOT NULL, 
+MODIFY name VARCHAR(255) NOT NULL, 
+MODIFY password VARCHAR(255) NOT NULL, 
+MODIFY role VARCHAR(255) NOT NULL;
+
+SELECT * FROM roles;
+
+
+ALTER TABLE users MODIFY id INT AUTO_INCREMENT PRIMARY KEY;
+
+
+INSERT INTO users (email, name, password) VALUES ('test@example.com', 'Test User', 'password123');
+
+
+ALTER TABLE users DROP PRIMARY KEY;
+ALTER TABLE users MODIFY id INT AUTO_INCREMENT PRIMARY KEY;
+
+
 -- Mostrar todos los autores
 SELECT * FROM products;
 

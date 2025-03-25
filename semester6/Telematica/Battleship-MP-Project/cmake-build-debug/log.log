@@ -1,0 +1,695 @@
+[Mon Mar 24 18:36:00 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 18:43:26 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 18:45:55 2025] Usuario logueado: MLGdaniel
+2025-03-24 18:45:55 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 18:45:57 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 18:45:57 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 18:45:59 2025] MLGdaniel busca partida
+2025-03-24 18:45:59 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 18:46:13 2025] Usuario logueado: agua
+2025-03-24 18:46:13 MLG-PC LOGIN|agua|1 127.0.0.1
+[Mon Mar 24 18:46:14 2025] agua busca partida
+[Mon Mar 24 18:46:14 2025] Partida creada entre agua y MLGdaniel
+2025-03-24 18:46:14 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 18:46:14 2025] Usuario desconectado: agua
+[Mon Mar 24 18:46:25 2025] MLGdaniel busca partida
+2025-03-24 18:46:25 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 18:46:25 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 18:49:11 2025] Usuario logueado: MLGdaniel
+2025-03-24 18:49:11 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 18:49:13 2025] MLGdaniel busca partida
+2025-03-24 18:49:13 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 18:49:24 2025] Usuario logueado: agua
+2025-03-24 18:49:24 MLG-PC LOGIN|agua|1 127.0.0.1
+[Mon Mar 24 18:49:26 2025] agua busca partida
+[Mon Mar 24 18:49:26 2025] Partida creada entre agua y MLGdaniel
+2025-03-24 18:49:26 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 18:49:27 2025] Usuario desconectado: agua
+[Mon Mar 24 18:49:43 2025] MLGdaniel busca partida
+2025-03-24 18:49:43 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 18:49:44 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 18:49:58 2025] Usuario logueado: MLGdaniel
+2025-03-24 18:49:58 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 18:50:06 2025] Usuario logueado: agua
+2025-03-24 18:50:06 MLG-PC LOGIN|agua|1 127.0.0.1
+[Mon Mar 24 18:50:07 2025] agua busca partida
+2025-03-24 18:50:07 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 18:50:18 2025] MLGdaniel busca partida
+[Mon Mar 24 18:50:18 2025] Partida creada entre MLGdaniel y agua
+2025-03-24 18:50:18 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 18:51:30 2025] Usuario desconectado: agua
+[Mon Mar 24 18:53:19 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 18:59:32 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 19:00:47 2025] Usuario logueado: MLGdaniel
+2025-03-24 19:00:47 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:00:52 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 19:00:52 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 19:00:55 2025] MLGdaniel busca partida
+2025-03-24 19:00:55 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:02:26 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 19:05:15 2025] Usuario logueado: MLGdaniel
+2025-03-24 19:05:15 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:05:18 2025] MLGdaniel busca partida
+[Mon Mar 24 19:05:18 2025] Partida creada entre MLGdaniel y MLGdaniel
+2025-03-24 19:05:18 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:05:19 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 19:05:36 2025] Intento de login fallido: Credenciales incorrectas - aga
+2025-03-24 19:05:36 MLG-PC LOGIN|aga|1 127.0.0.1
+[Mon Mar 24 19:05:39 2025] Usuario logueado: agua
+2025-03-24 19:05:39 MLG-PC LOGIN|agua|1 127.0.0.1
+[Mon Mar 24 19:06:06 2025] agua busca partida
+2025-03-24 19:06:06 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:06:13 2025] agua busca partida
+[Mon Mar 24 19:06:13 2025] Partida creada entre agua y agua
+2025-03-24 19:06:13 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:06:14 2025] Usuario desconectado: agua
+[Mon Mar 24 19:10:17 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 19:10:39 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 19:10:54 2025] Usuario logueado: MLGdaniel
+2025-03-24 19:10:54 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:10:57 2025] MLGdaniel busca partida
+2025-03-24 19:10:57 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:11:11 2025] Usuario logueado: agua
+2025-03-24 19:11:11 MLG-PC LOGIN|agua|1 127.0.0.1
+[Mon Mar 24 19:11:12 2025] agua busca partida
+[Mon Mar 24 19:11:12 2025] Partida creada entre agua y MLGdaniel
+2025-03-24 19:11:12 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:11:13 2025] Usuario desconectado: agua
+[Mon Mar 24 19:11:32 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 19:11:37 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 19:12:04 2025] Usuario logueado: MLGdaniel
+2025-03-24 19:12:04 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:12:12 2025] MLGdaniel busca partida
+2025-03-24 19:12:12 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:12:24 2025] Usuario logueado: agua
+2025-03-24 19:12:24 MLG-PC LOGIN|agua|1 127.0.0.1
+[Mon Mar 24 19:12:26 2025] agua busca partida
+[Mon Mar 24 19:12:26 2025] Partida creada entre agua y MLGdaniel
+2025-03-24 19:12:26 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:12:31 2025] MLGdaniel busca partida
+2025-03-24 19:12:31 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:12:37 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 19:12:39 2025] Usuario desconectado: agua
+[Mon Mar 24 19:14:01 2025] Usuario logueado: MLGdaniel
+2025-03-24 19:14:01 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:14:53 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 19:15:00 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 19:17:23 2025] Intento de login fallido: Credenciales incorrectas - MLGdaniel
+2025-03-24 19:17:23 MLG-PC LOGIN|MLGdaniel|1 127.0.0.1
+[Mon Mar 24 19:17:33 2025] Usuario logueado: MLGdaniel
+2025-03-24 19:17:33 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:17:36 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 19:17:36 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 19:17:39 2025] MLGdaniel busca partida
+2025-03-24 19:17:39 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:18:02 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 19:20:58 2025] Usuario logueado: MLGdaniel
+2025-03-24 19:20:58 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:21:00 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 19:21:00 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 19:21:03 2025] MLGdaniel busca partida
+[Mon Mar 24 19:21:03 2025] Partida creada entre MLGdaniel y MLGdaniel
+2025-03-24 19:21:03 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:21:15 2025] MLGdaniel busca partida
+2025-03-24 19:21:15 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:21:21 2025] Usuario deslogueado: MLGdaniel
+2025-03-24 19:21:21 MLG-PC LOGOUT|MLGdaniel 127.0.0.1
+[Mon Mar 24 19:21:37 2025] Usuario logueado: MLGdaniel
+2025-03-24 19:21:37 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:21:39 2025] MLGdaniel busca partida
+2025-03-24 19:21:39 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:23:38 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 19:23:49 2025] Usuario logueado: MLGdaniel
+2025-03-24 19:23:49 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:23:51 2025] MLGdaniel busca partida
+[Mon Mar 24 19:23:51 2025] Partida creada entre MLGdaniel y MLGdaniel
+2025-03-24 19:23:51 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:23:52 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 19:24:06 2025] Usuario logueado: MLGdaniel
+2025-03-24 19:24:06 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:24:08 2025] MLGdaniel busca partida
+2025-03-24 19:24:08 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:24:09 2025] MLGdaniel busca partida
+[Mon Mar 24 19:24:09 2025] Partida creada entre MLGdaniel y MLGdaniel
+2025-03-24 19:24:09 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:24:10 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 19:25:28 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 19:25:41 2025] Intento de login fallido: Credenciales incorrectas - MLGdaniel
+2025-03-24 19:25:41 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:25:51 2025] Intento de login fallido: Credenciales incorrectas - MLGdaniel
+2025-03-24 19:25:51 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:25:54 2025] Intento de login fallido: Credenciales incorrectas - agua
+2025-03-24 19:25:54 MLG-PC LOGIN|agua|1 127.0.0.1
+[Mon Mar 24 19:28:05 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 19:28:12 2025] Intento de login fallido: Credenciales incorrectas - MLGdaniel
+2025-03-24 19:28:12 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:28:41 2025] Intento de login fallido: Credenciales incorrectas - agua
+2025-03-24 19:28:41 MLG-PC LOGIN|agua|1 127.0.0.1
+[Mon Mar 24 19:28:46 2025] Intento de login fallido: Credenciales incorrectas - agua
+2025-03-24 19:28:46 MLG-PC LOGIN|agua|1 127.0.0.1
+[Mon Mar 24 19:29:05 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 19:29:21 2025] Usuario logueado: MLGdaniel
+2025-03-24 19:29:21 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:29:24 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 19:29:24 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 19:30:51 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 19:30:58 2025] Intento de login fallido: Credenciales incorrectas - MLGdaniel
+2025-03-24 19:30:58 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:31:22 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 19:31:29 2025] Usuario logueado: MLGdaniel
+2025-03-24 19:31:29 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:31:30 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 19:31:30 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 19:31:38 2025] Usuario logueado: agua
+2025-03-24 19:31:38 MLG-PC LOGIN|agua|1 127.0.0.1
+[Mon Mar 24 19:31:41 2025] Lista de jugadores enviada a agua
+2025-03-24 19:31:41 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 19:31:44 2025] agua busca partida
+2025-03-24 19:31:44 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:31:45 2025] agua busca partida
+[Mon Mar 24 19:31:45 2025] Partida creada entre agua y agua
+2025-03-24 19:31:45 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:31:46 2025] Usuario desconectado: agua
+[Mon Mar 24 19:33:48 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 19:33:52 2025] Nuevo cliente conectado desde 127.0.0.1
+[Mon Mar 24 19:33:58 2025] Intento de login fallido: Credenciales incorrectas - MLGdaniel
+2025-03-24 19:33:58 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:34:07 2025] Nuevo cliente conectado desde 127.0.0.1
+[Mon Mar 24 19:34:11 2025] Intento de login fallido: Credenciales incorrectas - agua
+2025-03-24 19:34:11 MLG-PC LOGIN|agua|1 127.0.0.1
+[Mon Mar 24 19:36:09 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 19:36:12 2025] Nuevo cliente conectado desde 127.0.0.1
+[Mon Mar 24 19:36:18 2025] Intento de login fallido: Credenciales incorrectas - MLGdaniel
+2025-03-24 19:36:18 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:36:33 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 19:36:36 2025] Nuevo cliente conectado desde 127.0.0.1
+[Mon Mar 24 19:36:39 2025] Intento de login fallido: Credenciales incorrectas - MLGdaniel
+2025-03-24 19:36:39 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:36:49 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 19:36:56 2025] Usuario logueado: MLGdaniel
+2025-03-24 19:36:56 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:36:58 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 19:38:01 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 19:38:13 2025] Usuario logueado: MLGdaniel
+2025-03-24 19:38:13 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:38:16 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 19:38:28 2025] Usuario logueado: MLGdaniel
+2025-03-24 19:38:28 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:38:30 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 19:38:30 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 19:52:47 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 19:53:39 2025] Usuario logueado: MLGdaniel
+2025-03-24 19:53:39 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 19:53:42 2025] MLGdaniel busca partida
+2025-03-24 19:53:42 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:53:43 2025] MLGdaniel busca partida
+[Mon Mar 24 19:53:43 2025] Partida creada entre MLGdaniel y MLGdaniel
+2025-03-24 19:53:43 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:27 2025] MLGdaniel busca partida
+2025-03-24 19:54:27 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:38 2025] MLGdaniel busca partida
+2025-03-24 19:54:38 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:39 2025] MLGdaniel busca partida
+2025-03-24 19:54:39 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:40 2025] MLGdaniel busca partida
+2025-03-24 19:54:40 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:41 2025] MLGdaniel busca partida
+2025-03-24 19:54:41 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:42 2025] MLGdaniel busca partida
+2025-03-24 19:54:42 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:43 2025] MLGdaniel busca partida
+2025-03-24 19:54:43 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:44 2025] MLGdaniel busca partida
+2025-03-24 19:54:44 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:45 2025] MLGdaniel busca partida
+2025-03-24 19:54:45 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:46 2025] MLGdaniel busca partida
+2025-03-24 19:54:46 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:47 2025] MLGdaniel busca partida
+2025-03-24 19:54:47 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:48 2025] MLGdaniel busca partida
+2025-03-24 19:54:48 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:49 2025] MLGdaniel busca partida
+2025-03-24 19:54:49 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:50 2025] MLGdaniel busca partida
+2025-03-24 19:54:50 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:51 2025] MLGdaniel busca partida
+2025-03-24 19:54:51 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:52 2025] MLGdaniel busca partida
+2025-03-24 19:54:52 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:53 2025] MLGdaniel busca partida
+2025-03-24 19:54:53 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:54 2025] MLGdaniel busca partida
+2025-03-24 19:54:54 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:55 2025] MLGdaniel busca partida
+2025-03-24 19:54:55 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:56 2025] MLGdaniel busca partida
+2025-03-24 19:54:56 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:57 2025] MLGdaniel busca partida
+2025-03-24 19:54:57 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:58 2025] MLGdaniel busca partida
+2025-03-24 19:54:58 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:54:59 2025] MLGdaniel busca partida
+2025-03-24 19:54:59 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:55:00 2025] MLGdaniel busca partida
+2025-03-24 19:55:00 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:55:01 2025] MLGdaniel busca partida
+2025-03-24 19:55:01 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:55:02 2025] MLGdaniel busca partida
+2025-03-24 19:55:02 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:55:03 2025] MLGdaniel busca partida
+2025-03-24 19:55:03 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:55:04 2025] MLGdaniel busca partida
+2025-03-24 19:55:04 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:55:05 2025] MLGdaniel busca partida
+2025-03-24 19:55:05 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:55:06 2025] MLGdaniel busca partida
+2025-03-24 19:55:06 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 19:55:07 2025] MLGdaniel busca partida
+2025-03-24 19:55:07 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:09:10 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 20:09:18 2025] Usuario logueado: MLGdaniel
+2025-03-24 20:09:18 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 20:09:20 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 20:09:20 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 20:09:21 2025] MLGdaniel busca partida
+2025-03-24 20:09:21 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:09:22 2025] MLGdaniel busca partida
+2025-03-24 20:09:22 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:09:23 2025] MLGdaniel busca partida
+2025-03-24 20:09:23 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:09:24 2025] MLGdaniel busca partida
+2025-03-24 20:09:24 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:09:25 2025] MLGdaniel busca partida
+2025-03-24 20:09:25 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:09:26 2025] MLGdaniel busca partida
+2025-03-24 20:09:26 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:09:27 2025] MLGdaniel busca partida
+2025-03-24 20:09:27 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:09:28 2025] MLGdaniel busca partida
+2025-03-24 20:09:28 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:09:29 2025] MLGdaniel busca partida
+2025-03-24 20:09:29 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:09:30 2025] MLGdaniel busca partida
+2025-03-24 20:09:30 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:09:31 2025] MLGdaniel busca partida
+2025-03-24 20:09:31 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:09:32 2025] MLGdaniel busca partida
+2025-03-24 20:09:32 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:09:33 2025] MLGdaniel busca partida
+2025-03-24 20:09:33 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:09:34 2025] Usuario logueado: agua
+2025-03-24 20:09:34 MLG-PC LOGIN|agua|1 127.0.0.1
+[Mon Mar 24 20:09:34 2025] MLGdaniel busca partida
+2025-03-24 20:09:34 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:09:34 2025] agua busca partida
+[Mon Mar 24 20:09:34 2025] Partida creada entre agua y MLGdaniel
+2025-03-24 20:09:34 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:09:35 2025] MLGdaniel busca partida
+2025-03-24 20:09:35 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:10:57 2025] MLGdaniel busca partida
+2025-03-24 20:10:57 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:10:58 2025] MLGdaniel busca partida
+2025-03-24 20:10:58 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:10:59 2025] MLGdaniel busca partida
+2025-03-24 20:10:59 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:11:00 2025] MLGdaniel busca partida
+2025-03-24 20:11:00 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:11:01 2025] MLGdaniel busca partida
+2025-03-24 20:11:01 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:11:02 2025] MLGdaniel busca partida
+2025-03-24 20:11:02 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:11:03 2025] MLGdaniel busca partida
+2025-03-24 20:11:03 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:11:03 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 20:11:08 2025] Lista de jugadores enviada a agua
+2025-03-24 20:11:08 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 20:11:25 2025] Usuario desconectado: agua
+[Mon Mar 24 20:11:29 2025] Usuario logueado: MLGdaniel
+2025-03-24 20:11:29 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 20:11:35 2025] Usuario logueado: agua
+2025-03-24 20:11:35 MLG-PC LOGIN|agua|1 127.0.0.1
+[Mon Mar 24 20:11:37 2025] Lista de jugadores enviada a agua
+2025-03-24 20:11:37 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 20:11:39 2025] agua busca partida
+[Mon Mar 24 20:11:39 2025] Partida creada entre agua y MLGdaniel
+2025-03-24 20:11:39 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:11:45 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 20:11:45 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 20:12:01 2025] MLGdaniel busca partida
+2025-03-24 20:12:01 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:12:02 2025] MLGdaniel busca partida
+2025-03-24 20:12:02 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:12:03 2025] MLGdaniel busca partida
+2025-03-24 20:12:03 MLG-PC FIND_GAME| 127.0.0.1
+2025-03-24 20:12:04 MLG-PC FIND_GAME| 127.0.0.1
+a
+[Mon Mar 24 20:12:05 2025] MLGdaniel busca partida
+2025-03-24 20:12:05 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:12:06 2025] MLGdaniel busca partida
+2025-03-24 20:12:06 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:12:07 2025] MLGdaniel busca partida
+2025-03-24 20:12:07 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:12:08 2025] MLGdaniel busca partida
+2025-03-24 20:12:08 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:12:09 2025] MLGdaniel busca partida
+2025-03-24 20:12:09 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:12:10 2025] MLGdaniel busca partida
+2025-03-24 20:12:10 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:12:11 2025] MLGdaniel busca partida
+2025-03-24 20:12:11 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:12:12 2025] MLGdaniel busca partida
+2025-03-24 20:12:12 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:12:13 2025] MLGdaniel busca partida
+2025-03-24 20:12:13 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:12:14 2025] MLGdaniel busca partida
+2025-03-24 20:12:14 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:12:15 2025] MLGdaniel busca partida
+2025-03-24 20:12:15 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:12:16 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 20:12:17 2025] Usuario desconectado: agua
+[Mon Mar 24 20:27:34 2025] Usuario logueado: MLGdaniel
+2025-03-24 20:27:34 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 20:27:36 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 20:27:36 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 20:32:01 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 20:32:17 2025] Usuario logueado: MLGdaniel
+2025-03-24 20:32:17 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 20:32:18 2025] MLGdaniel busca partida
+2025-03-24 20:32:18 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:19 2025] MLGdaniel busca partida
+2025-03-24 20:32:19 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:20 2025] MLGdaniel busca partida
+2025-03-24 20:32:20 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:21 2025] MLGdaniel busca partida
+2025-03-24 20:32:21 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:22 2025] MLGdaniel busca partida
+2025-03-24 20:32:22 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:23 2025] MLGdaniel busca partida
+2025-03-24 20:32:23 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:24 2025] MLGdaniel busca partida
+2025-03-24 20:32:24 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:25 2025] MLGdaniel busca partida
+2025-03-24 20:32:25 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:25 2025] Usuario logueado: agua
+2025-03-24 20:32:25 MLG-PC LOGIN|agua|1 127.0.0.1
+[Mon Mar 24 20:32:26 2025] MLGdaniel busca partida
+2025-03-24 20:32:26 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:27 2025] MLGdaniel busca partida
+2025-03-24 20:32:27 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:27 2025] agua busca partida
+2025-03-24 20:32:27 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:28 2025] MLGdaniel busca partida
+2025-03-24 20:32:28 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:28 2025] agua busca partida
+2025-03-24 20:32:28 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:29 2025] MLGdaniel busca partida
+2025-03-24 20:32:29 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:29 2025] agua busca partida
+2025-03-24 20:32:29 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:30 2025] MLGdaniel busca partida
+2025-03-24 20:32:30 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:30 2025] agua busca partida
+2025-03-24 20:32:30 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:31 2025] MLGdaniel busca partida
+2025-03-24 20:32:31 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:31 2025] agua busca partida
+2025-03-24 20:32:31 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:32 2025] MLGdaniel busca partida
+2025-03-24 20:32:32 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:32 2025] agua busca partida
+2025-03-24 20:32:32 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:33 2025] MLGdaniel busca partida
+2025-03-24 20:32:33 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:33 2025] agua busca partida
+2025-03-24 20:32:33 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:34 2025] MLGdaniel busca partida
+2025-03-24 20:32:34 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:34 2025] agua busca partida
+2025-03-24 20:32:34 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:35 2025] MLGdaniel busca partida
+2025-03-24 20:32:35 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:35 2025] agua busca partida
+2025-03-24 20:32:35 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:36 2025] MLGdaniel busca partida
+2025-03-24 20:32:36 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:36 2025] agua busca partida
+2025-03-24 20:32:36 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:37 2025] MLGdaniel busca partida
+2025-03-24 20:32:37 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:37 2025] agua busca partida
+2025-03-24 20:32:37 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:38 2025] MLGdaniel busca partida
+2025-03-24 20:32:38 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:38 2025] agua busca partida
+2025-03-24 20:32:38 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:39 2025] MLGdaniel busca partida
+2025-03-24 20:32:39 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:39 2025] agua busca partida
+2025-03-24 20:32:39 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:40 2025] MLGdaniel busca partida
+2025-03-24 20:32:40 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:40 2025] agua busca partida
+2025-03-24 20:32:40 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:41 2025] MLGdaniel busca partida
+2025-03-24 20:32:41 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:41 2025] agua busca partida
+2025-03-24 20:32:41 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:42 2025] MLGdaniel busca partida
+2025-03-24 20:32:42 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:42 2025] agua busca partida
+2025-03-24 20:32:42 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:43 2025] MLGdaniel busca partida
+2025-03-24 20:32:43 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:43 2025] agua busca partida
+2025-03-24 20:32:43 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:44 2025] MLGdaniel busca partida
+2025-03-24 20:32:44 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:44 2025] agua busca partida
+2025-03-24 20:32:44 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:45 2025] MLGdaniel busca partida
+2025-03-24 20:32:45 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:45 2025] agua busca partida
+2025-03-24 20:32:45 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:46 2025] MLGdaniel busca partida
+2025-03-24 20:32:46 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:46 2025] agua busca partida
+2025-03-24 20:32:46 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:47 2025] MLGdaniel busca partida
+2025-03-24 20:32:47 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:47 2025] agua busca partida
+2025-03-24 20:32:47 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:48 2025] agua busca partida
+2025-03-24 20:32:48 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:49 2025] agua busca partida
+2025-03-24 20:32:49 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:50 2025] agua busca partida
+2025-03-24 20:32:50 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:51 2025] agua busca partida
+2025-03-24 20:32:51 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:53 2025] agua busca partida
+2025-03-24 20:32:53 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:54 2025] agua busca partida
+2025-03-24 20:32:54 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:54 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 20:32:54 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 20:32:55 2025] agua busca partida
+2025-03-24 20:32:55 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:56 2025] agua busca partida
+2025-03-24 20:32:56 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:32:57 2025] agua busca partida
+2025-03-24 20:32:57 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:33:00 2025] agua busca partida
+2025-03-24 20:33:00 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:33:01 2025] agua busca partida
+2025-03-24 20:33:01 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:33:02 2025] agua busca partida
+2025-03-24 20:33:02 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:33:03 2025] MLGdaniel busca partida
+2025-03-24 20:33:03 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:33:03 2025] agua busca partida
+2025-03-24 20:33:03 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:33:04 2025] MLGdaniel busca partida
+2025-03-24 20:33:04 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:33:04 2025] agua busca partida
+2025-03-24 20:33:04 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:33:05 2025] MLGdaniel busca partida
+2025-03-24 20:33:05 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:33:05 2025] agua busca partida
+2025-03-24 20:33:05 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:33:06 2025] MLGdaniel busca partida
+2025-03-24 20:33:06 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:33:06 2025] agua busca partida
+2025-03-24 20:33:06 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:33:07 2025] MLGdaniel busca partida
+2025-03-24 20:33:07 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:33:07 2025] agua busca partida
+2025-03-24 20:33:07 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:33:07 2025] Usuario desconectado: agua
+[Mon Mar 24 20:33:08 2025] MLGdaniel busca partida
+2025-03-24 20:33:08 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:33:08 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 20:34:07 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 20:34:12 2025] Usuario logueado: MLGdaniel
+2025-03-24 20:34:12 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 20:34:13 2025] MLGdaniel busca partida
+2025-03-24 20:34:13 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:34:14 2025] MLGdaniel busca partida
+2025-03-24 20:34:14 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:34:15 2025] MLGdaniel busca partida
+2025-03-24 20:34:15 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:34:16 2025] MLGdaniel busca partida
+2025-03-24 20:34:16 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:34:17 2025] MLGdaniel busca partida
+2025-03-24 20:34:17 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:34:18 2025] MLGdaniel busca partida
+2025-03-24 20:34:18 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:34:19 2025] MLGdaniel busca partida
+2025-03-24 20:34:19 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:34:20 2025] MLGdaniel busca partida
+2025-03-24 20:34:20 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:34:21 2025] Usuario logueado: agua
+2025-03-24 20:34:21 MLG-PC LOGIN|agua|1 127.0.0.1
+[Mon Mar 24 20:34:21 2025] MLGdaniel busca partida
+2025-03-24 20:34:21 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:34:22 2025] Lista de jugadores enviada a agua
+2025-03-24 20:34:22 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 20:34:22 2025] MLGdaniel busca partida
+2025-03-24 20:34:22 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:34:23 2025] MLGdaniel busca partida
+2025-03-24 20:34:23 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:34:24 2025] MLGdaniel busca partida
+2025-03-24 20:34:24 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:34:25 2025] MLGdaniel busca partida
+2025-03-24 20:34:25 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:34:25 2025] agua busca partida
+[Mon Mar 24 20:34:25 2025] Partida creada entre agua y MLGdaniel
+[Mon Mar 24 20:34:25 2025] Juego iniciado entre  y MLGdaniel
+2025-03-24 20:34:25 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:34:26 2025] MLGdaniel busca partida
+2025-03-24 20:34:26 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:38:17 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 20:38:18 2025] Usuario desconectado: agua
+[Mon Mar 24 20:38:30 2025] Usuario logueado: MLGdaniel
+2025-03-24 20:38:30 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 20:38:37 2025] Usuario logueado: agua
+2025-03-24 20:38:37 MLG-PC LOGIN|agua|1 127.0.0.1
+[Mon Mar 24 20:38:38 2025] agua busca partida
+[Mon Mar 24 20:38:38 2025] Partida creada entre agua y MLGdaniel
+[Mon Mar 24 20:38:38 2025] Juego iniciado entre  y MLGdaniel
+2025-03-24 20:38:38 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:38:43 2025] MLGdaniel busca partida
+2025-03-24 20:38:43 MLG-PC FIND_GAME| 127.0.0.1
+2025-03-24 20:38:51  SURRENDER 127.0.0.1
+[Mon Mar 24 20:38:51 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 20:39:12 2025] Usuario desconectado: agua
+[Mon Mar 24 20:40:38 2025] Intento de login fallido: Credenciales incorrectas - MLGdaniel
+2025-03-24 20:40:38 MLG-PC LOGIN|MLGdaniel|1 127.0.0.1
+[Mon Mar 24 20:40:46 2025] Usuario logueado: MLGdaniel
+2025-03-24 20:40:46 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 20:40:50 2025] Usuario logueado: agua
+2025-03-24 20:40:50 MLG-PC LOGIN|agua|1 127.0.0.1
+[Mon Mar 24 20:40:51 2025] agua busca partida
+[Mon Mar 24 20:40:51 2025] Partida creada entre agua y MLGdaniel
+[Mon Mar 24 20:40:51 2025] Juego iniciado entre  y MLGdaniel
+2025-03-24 20:40:51 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:40:59 2025] MLGdaniel busca partida
+2025-03-24 20:40:59 MLG-PC FIND_GAME| 127.0.0.1
+2025-03-24 20:41:13  SURRENDER 127.0.0.1
+[Mon Mar 24 20:41:19 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 20:41:19 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 20:41:26 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 20:41:26 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 20:41:27 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 20:41:27 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 20:41:27 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 20:41:27 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 20:41:28 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 20:41:28 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 20:41:30 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 20:41:31 2025] Usuario desconectado: agua
+[Mon Mar 24 20:42:29 2025] Usuario logueado: MLGdaniel
+2025-03-24 20:42:29 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 20:42:31 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 20:42:31 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 20:42:38 2025] Intento de login fallido: Usuario ya conectado - MLGdaniel
+2025-03-24 20:42:38 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 20:42:43 2025] Usuario logueado: agua
+2025-03-24 20:42:43 MLG-PC LOGIN|agua|1 127.0.0.1
+[Mon Mar 24 20:42:44 2025] Lista de jugadores enviada a agua
+2025-03-24 20:42:44 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 20:42:46 2025] agua busca partida
+[Mon Mar 24 20:42:46 2025] Partida creada entre agua y MLGdaniel
+[Mon Mar 24 20:42:46 2025] Juego iniciado entre  y MLGdaniel
+2025-03-24 20:42:46 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:42:52 2025] MLGdaniel busca partida
+2025-03-24 20:42:52 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:43:52 2025] Lista de jugadores enviada a agua
+2025-03-24 20:43:52 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 20:44:12 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 20:44:19 2025] Usuario desconectado: agua
+[Mon Mar 24 20:44:29 2025] Usuario logueado: MLGdaniel
+2025-03-24 20:44:29 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 20:44:31 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 20:44:31 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 20:44:35 2025] Usuario logueado: agua
+2025-03-24 20:44:35 MLG-PC LOGIN|agua|1 127.0.0.1
+[Mon Mar 24 20:44:36 2025] agua busca partida
+[Mon Mar 24 20:44:36 2025] Partida creada entre agua y MLGdaniel
+2025-03-24 20:44:36 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:44:36 2025] Juego iniciado entre  y MLGdaniel
+[Mon Mar 24 20:44:43 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 20:44:43 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 20:44:51 2025] MLGdaniel busca partida
+2025-03-24 20:44:51 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:44:52 2025] MLGdaniel busca partida
+2025-03-24 20:44:52 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:44:53 2025] MLGdaniel busca partida
+2025-03-24 20:44:53 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:44:54 2025] MLGdaniel busca partida
+2025-03-24 20:44:54 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:44:55 2025] MLGdaniel busca partida
+2025-03-24 20:44:55 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:44:56 2025] MLGdaniel busca partida
+2025-03-24 20:44:56 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:44:57 2025] MLGdaniel busca partida
+2025-03-24 20:44:57 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:44:58 2025] MLGdaniel busca partida
+2025-03-24 20:44:58 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:44:59 2025] MLGdaniel busca partida
+2025-03-24 20:44:59 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:45:00 2025] MLGdaniel busca partida
+2025-03-24 20:45:00 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:45:01 2025] MLGdaniel busca partida
+2025-03-24 20:45:01 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:45:02 2025] MLGdaniel busca partida
+2025-03-24 20:45:02 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:45:03 2025] MLGdaniel busca partida
+2025-03-24 20:45:03 MLG-PC FIND_GAME| 127.0.0.1
+[Mon Mar 24 20:45:03 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 20:45:09 2025] Lista de jugadores enviada a agua
+2025-03-24 20:45:09 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 20:45:15 2025] Usuario deslogueado: agua
+2025-03-24 20:45:15 MLG-PC LOGOUT|agua 127.0.0.1
+[Mon Mar 24 20:45:15 2025] Usuario desconectado: agua
+[Mon Mar 24 20:46:29 2025] Servidor iniciado en el puerto 8080
+[Mon Mar 24 20:47:05 2025] Usuario logueado: MLGdaniel
+2025-03-24 20:47:05 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 20:47:08 2025] Usuario deslogueado: MLGdaniel
+2025-03-24 20:47:08 MLG-PC LOGOUT|MLGdaniel 127.0.0.1
+[Mon Mar 24 20:47:08 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 20:47:44 2025] Usuario logueado: MLGdaniel
+2025-03-24 20:47:44 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 20:47:45 2025] Lista de jugadores enviada a MLGdaniel
+2025-03-24 20:47:45 MLG-PC PLAYERS| 127.0.0.1
+[Mon Mar 24 20:47:52 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 20:48:00 2025] Usuario logueado: MLGdaniel
+2025-03-24 20:48:00 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 20:48:01 2025] Usuario deslogueado: MLGdaniel
+2025-03-24 20:48:01 MLG-PC LOGOUT|MLGdaniel 127.0.0.1
+[Mon Mar 24 20:48:01 2025] Usuario desconectado: MLGdaniel
+[Mon Mar 24 20:48:44 2025] Usuario logueado: MLGdaniel
+2025-03-24 20:48:44 MLG-PC LOGIN|MLGdaniel|1234 127.0.0.1
+[Mon Mar 24 20:48:46 2025] Usuario deslogueado: MLGdaniel
+2025-03-24 20:48:46 MLG-PC LOGOUT|MLGdaniel 127.0.0.1
+[Mon Mar 24 20:48:46 2025] Usuario desconectado: MLGdaniel

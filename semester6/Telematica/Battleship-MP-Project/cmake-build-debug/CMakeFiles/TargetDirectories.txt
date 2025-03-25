@@ -1,0 +1,4 @@
+F:/Battleship-MP-Project/cmake-build-debug/CMakeFiles/servidor.dir
+F:/Battleship-MP-Project/cmake-build-debug/CMakeFiles/cliente.dir
+F:/Battleship-MP-Project/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/Battleship-MP-Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir

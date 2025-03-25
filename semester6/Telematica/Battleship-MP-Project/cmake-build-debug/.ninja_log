@@ -1,0 +1,23 @@
+# ninja log v6
+11	1593	7645530274649908	CMakeFiles/Battleship_MP_Project.dir/main.cpp.obj	3ae4d8f2493c1989
+43	1461	7645491114607398	CMakeFiles/Battleship_MP_Project.dir/si.cpp.obj	463767324370ecfe
+17	1204	7645531201359244	CMakeFiles/Battleship_MP_Project.dir/cliente.cpp.obj	c222cb27ed35806
+2	264	7645613778402516	build.ninja	5617c3aeac298871
+25	1444	7645494254676032	CMakeFiles/Battleship_MP_Project.dir/client.cpp.obj	fc5cff64f5f6d501
+22	1390	7645494254630877	CMakeFiles/Battleship_MP_Project.dir/server.cpp.obj	c5c38ff9e5e470b3
+10	1291	7645577929673466	CMakeFiles/cliente.dir/cliente.cpp.obj	8544918b3a4d3291
+20	117	7645702615591075	cliente.exe	b537009517314056
+4	1825	7645573617364100	CMakeFiles/servidor.dir/main.cpp.obj	3846c4bde8839b8d
+2029	2242	7645696455850984	servidor.exe	d7199817756bd6
+17	1963	7645702526051645	CMakeFiles/cliente.dir/client.cpp.obj	249171f371edf116
+4	2029	7645696435606613	CMakeFiles/servidor.dir/server.cpp.obj	29f3d3bf1db3fd50
+15	2139	7645703858193071	CMakeFiles/servidor.dir/server.cpp.obj	29f3d3bf1db3fd50
+2139	2334	7645703879445027	servidor.exe	d7199817756bd6
+19	1962	7645703921909817	CMakeFiles/cliente.dir/client.cpp.obj	249171f371edf116
+1963	2055	7645703941349340	cliente.exe	b537009517314056
+16	1806	7645704563930434	CMakeFiles/cliente.dir/client.cpp.obj	249171f371edf116
+1807	1893	7645704581837046	cliente.exe	b537009517314056
+16	1956	7645704725017070	CMakeFiles/cliente.dir/client.cpp.obj	249171f371edf116
+1957	2046	7645704744413579	cliente.exe	b537009517314056
+16	1815	7645705170493943	CMakeFiles/cliente.dir/client.cpp.obj	249171f371edf116
+1816	1899	7645705188485660	cliente.exe	b537009517314056
